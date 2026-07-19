@@ -1,0 +1,12 @@
+bundle:
+  name: proyecto_final_marcopuclla
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    mode: development
+    default: true
+    workspace:
+      host: https://dbc-2a714331-2ecd.cloud.databricks.com

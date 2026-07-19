@@ -1,0 +1,8 @@
+resources:
+  jobs:
+    job_ventas_retail:
+      name: job_ventas_retail_marcopuclla
+      tasks:
+        - task_key: run_pipeline
+          pipeline_task:
+            pipeline_id: ${resources.pipelines.pipeline_ventas_retail.id}

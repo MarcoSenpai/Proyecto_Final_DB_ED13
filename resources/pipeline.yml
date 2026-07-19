@@ -1,0 +1,14 @@
+resources:
+  pipelines:
+    pipeline_ventas_retail:
+      name: pipeline_ventas_retail_marcopuclla
+      catalog: proyecto_final
+      schema: bronze
+      serverless: true
+      libraries:
+        - file:
+            path: ../src/transformations/01_bronze.py
+        - file:
+            path: ../src/transformations/02_silver.py
+        - file:
+            path: ../src/transformations/03_gold.py
